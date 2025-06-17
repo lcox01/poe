@@ -108,7 +108,7 @@ public class PatchManager
                 }
             }
 
-            stopWatch.Stop();
+            stopWatch.Stop(); 
             window.EmitToConsole($"{patch.GetType().Name} patched in {(int)stopWatch.Elapsed.TotalMilliseconds}ms.");
         }
 
