@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer;
-
+//小地图可见
 public class RevealPatch : IPatch
 {
     public string[] FilesToPatch => ["shaders/minimap_visibility_pixel.hlsl"];

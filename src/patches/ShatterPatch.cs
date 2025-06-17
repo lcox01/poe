@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer;
-
+//移除粉碎特效 技能相关
 public class ShatterPatch : IPatch
 {
     public string[] FilesToPatch => [];

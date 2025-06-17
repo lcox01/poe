@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer;
-
+//移除黑暗
 public class FogPatch : IPatch
 {
     public string[] FilesToPatch => [];

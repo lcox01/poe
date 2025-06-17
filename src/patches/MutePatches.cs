@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer.src.patches;
-
+//移除所有声音
 public class MutePatches : IPatch
 {
     public string[] FilesToPatch => [

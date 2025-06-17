@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer;
-
+//全局照亮
 public class LightPatch : IPatch
 {
     public string[] FilesToPatch => [];

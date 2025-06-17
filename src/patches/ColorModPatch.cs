@@ -3,7 +3,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 
 namespace PoeFixer;
-
+//词缀颜色
 public class ColorModPatch : IPatch
 {
     public string[] FilesToPatch => [];

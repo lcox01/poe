@@ -66,6 +66,7 @@ public class PatchManager
     public int Patch()
     {
         // Get every class implementing the IPatch interface.
+        //获取所有实现了ipatch接口的类
         Type[] patchTypes = Assembly.GetExecutingAssembly().GetTypes().Where(x => x.GetInterfaces().Contains(typeof(IPatch))).ToArray();
 
         CollectSettings();
@@ -76,6 +77,7 @@ public class PatchManager
         {
             patches[i] = (IPatch)Activator.CreateInstance(patchTypes[i])!;
         }
+        // 获取所有选中项目
         patches = patches.Where(x => x.ShouldPatch(bools, floats)).ToArray();
 
         // Delete modified file directory.
@@ -92,7 +94,7 @@ public class PatchManager
             stopWatch.Start();
 
             foreach (string file in patch.FilesToPatch)
-            {
+            {   // 修改文件
                 TryModifyFile(file, patch);
             }
 
@@ -150,7 +152,7 @@ public class PatchManager
         string? modifiedText = patch.PatchFile(text);
         if (modifiedText == null) return;
 
-        // Write to the modifie d cache.
+        // Write to the modified cache.
         if (patchModifiedAsset)
         {
             // Check if extension is glsl.

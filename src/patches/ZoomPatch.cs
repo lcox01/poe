@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer;
-
+//调整镜头高度
 public class ZoomPatch : IPatch
 {
     public float zoomLevel = 1;

@@ -11,29 +11,29 @@
 
         <Button Content="Patch" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="75" Click="PatchGGPK"/>
 
-        <Button Content="Extract Vanilla Assets" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="140" Click="ExtractVanillaAssets"/>
+        <Button Content="Extract Vanilla Assets"  IsEnabled="False"  HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="140" Click="ExtractVanillaAssets"/>
 
-        <Button Content="Restore Vanilla Assets" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Width="140" Click="RestoreExtractedAssets"/>
+        <Button Content="还原" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Width="140" Click="RestoreExtractedAssets"/>
 
         <TextBox x:Name="Console" Background="LightBlue" HorizontalAlignment="Left" Height="150" Margin="10,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" IsReadOnly="True" FontSize="10"/>
 
         <!--Settings-->
-        <CheckBox x:Name="zoomEnabled" Content="Zoom" HorizontalAlignment="Left" Margin="300,10,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="zoomSlider" HorizontalAlignment="Left" Margin="370,10,0,0" VerticalAlignment="Top" Width="120" Maximum="3" Minimum="1" TickPlacement="BottomRight" TickFrequency="0.2" SmallChange="0.2" Value="1" AutoToolTipPlacement="TopLeft" LargeChange="0.2" IsSnapToTickEnabled="True"/>
-
-        <CheckBox x:Name="removeFog" Content="Remove Fog (From Zoom)" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeShadows" Content="Remove Sun Shadows" HorizontalAlignment="Left" Margin="300,180,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="colorModsEnabled" Content="Color Mods" HorizontalAlignment="Left" Margin="300,70,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeParticles" Content="Remove Particles (Literally All, Experimental)" HorizontalAlignment="Left" Margin="300,90,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="revealEnabled" Content="Reveal Map" HorizontalAlignment="Left" Margin="300,110,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeLoadingScreen" Content="Invisible Loading Screen" HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeLight" Content="Remove Lights" HorizontalAlignment="Left" Margin="300,160,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="zoomEnabled" Content="调整镜头高度" HorizontalAlignment="Left" Margin="300,10,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="zoomSlider" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="120" Maximum="3" Minimum="1" TickPlacement="BottomRight" TickFrequency="0.2" SmallChange="0.2" Value="1" AutoToolTipPlacement="TopLeft" LargeChange="0.2" IsSnapToTickEnabled="True"/>
+ 
+        <CheckBox x:Name="removeFog" Content="移除黑暗" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeShadows" Content="移除阴影" HorizontalAlignment="Left" Margin="300,180,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="colorModsEnabled" Content="Color Mods(设置词缀颜色 暂时禁用)" IsEnabled="False" HorizontalAlignment="Left" Margin="300,70,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeParticles" Content="移除粒子 (Literally All, Experimental)" HorizontalAlignment="Left" Margin="300,90,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="revealEnabled" Content="小地图全开" HorizontalAlignment="Left" Margin="300,110,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeLoadingScreen" Content="Invisible Loading Screen(未知  暂时禁用)" IsEnabled="False"  HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeLight" Content="全局照亮" HorizontalAlignment="Left" Margin="300,160,0,0" VerticalAlignment="Top"/>
         
-        <CheckBox x:Name="removeCorpses" Content="Remove Corpses" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeShatter" Content="Remove Shatter" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeBloom" Content="Remove Bloom" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="replaceMtx" Content="Replace Skill Effects From Json" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeGoblins" Content="Remove Crying Baby And Goblins" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="removeDelirium" Content="Remove Delirium Effects" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeCorpses" Content="移除尸体" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeShatter" Content="Remove Shatter(粉碎特效)" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeBloom" Content="Remove Bloom（花？）" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="replaceMtx" Content="移除清单中的技能特效" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeGoblins" Content="Remove Crying Baby And Goblins（未知 暂时禁用）" IsEnabled="False" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="removeDelirium" Content="移除迷雾" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

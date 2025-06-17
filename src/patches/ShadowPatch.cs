@@ -1,5 +1,5 @@
 ﻿namespace PoeFixer;
-
+//移除阴影
 public class ShadowPatch : IPatch
 {
     public string[] FilesToPatch => [];
